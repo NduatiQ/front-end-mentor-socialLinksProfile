@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --backgroundColor: #43281C;
+    --containerColor: #48392A;
+    --parGreen: #F96F5D;
+    --buttonsColor:#FBF2C0 ;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilePic{
+    border-radius: 50%;
+    width:88px;
+    height: 88px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--containerColor);
+    width:20rem;    
+    height: auto;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 1rem;
+
+}
+p{
+    color: var(--buttonsColor);
+}
+#name{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight:600 ;
+    line-height: 150%;
+}
+#location{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:500 ;
+    line-height: 150%;
+    color: var(--parGreen);
+}
+#bio{
+   font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight:300 ;
+    line-height: 150%; 
+    margin: 20px 0;
+    
+}
+.myLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.myLinks a{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight:700 ;
+    line-height: 150%; 
+text-decoration: none;
+color: var(--backgroundColor);
+background-color: var(--buttonsColor);
+border: 1px solid var(--buttonsColor);
+width:16rem;
+height: 3rem;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*.myLinks a:hover{
+    background-color: var(--parGreen);
+    color: var(--buttonsColor);
+}*/
+/*For Desktops */
+@media only screen and (min-width: 768px){
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--containerColor);
+    width:26rem;    
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 1rem;
+
+}
+#profilePic{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.myLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.myLinks a{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:700 ;
+    line-height: 150%; 
+text-decoration: none;
+color: var(--backgroundColor);
+background-color: var(--buttonsColor);
+border: 1px solid var(--buttonsColor);
+width:20rem;
+height: 3rem;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.myLinks a:focus{
+    background-color: var(--parGreen);
+    color: var(--buttonsColor);
+    border: 1px solid var(--containerColor);
+}
+#name{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight:600 ;
+    line-height: 150%;
+}
+#location{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight:500 ;
+    line-height: 150%;
+    color: var(--parGreen);
+}
+#bio{
+   font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight:300 ;
+    line-height: 150%; 
+    margin: 20px 0;
+    color: var(--buttonsColor)
+}
+}
